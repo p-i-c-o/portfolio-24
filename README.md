@@ -1,2 +1,4 @@
 # portfolio-24
- New Portfolio for 2024
+
+This is the new portfolio for Elie M.
+2024 version.
