@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'Lausanne';
+    src: url('rsc/Lausanne-Regular.otf') format('opentype');
+}
+
+p {
+    font-family: "Arial";
+    color: white;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: nowrap; 
+    justify-content: flex-start; 
+    align-items: flex-start; 
+    align-content: flex-start;
+}
+
+.flex-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align content to the top */
+    align-items: flex-start; /* Align content to the left */
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    border: solid black 2px;
+    border-radius: 10px;
+    padding: 10px; /* Remove extra padding around text */
+    margin-right: 5px;
+    background-color: #383838;
+
+    min-width: 200px;
+    min-height: 100px;
+    line-height: 1; /* Tighten line spacing */
+}
+
+.flex-items > * {
+    margin: 0; /* Remove default margins for child text elements */
+    padding: 0; /* Remove padding if any */
+}
+
+.box-title {
+    font-size: 24px;
+}
+
+
+
+body {
+    background-color: #232323;
+}
