@@ -99,6 +99,55 @@ body {
     height: 30px;
 }
 
+.res-container {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  align-content: stretch;
+  border: 0px solid black;
+
+  gap: 25px
+}
+
+.res-items {
+  display: block;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+  padding: 0px;
+  margin: 0px;
+  height: 150px;
+}
+
+.res-items:img {
+  width: 150px;
+  height: 300px;
+}
+
+.res-items { position: relative; }
+.res-overlay {
+  /* (B1) COVER OVER ENTIRE IMAGE */
+  position: absolute; top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+ 
+  /* (B2) CENTER CONTENT */
+  display: flex; justify-content: center; align-items: center;
+}
+ 
+/* (C) ONLY SHOW CAPTION ON HOVER */
+.res-overlay {
+  visibility: none; opacity: 0;
+  transition: opacity 0.3s;
+}
+.res-items:hover .res-overlay {
+  visibility: visible; opacity: 1;
+}
+
+
 
 
 @keyframes scroll {
@@ -150,3 +199,5 @@ body {
     display: flex;
     width: calc(200px * 15);
   }
+
+
