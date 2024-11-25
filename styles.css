@@ -4,14 +4,15 @@
 }
 
 p {
-    font-family: "Arial";
+    font-family: 'Lausanne';
     color: white;
+    font-size: 14px;
 }
 
 .flex-container {
     display: flex;
     flex-direction: row; 
-    flex-wrap: nowrap; 
+    flex-wrap: wrap; 
     justify-content: flex-start; 
     align-items: flex-start; 
     align-content: flex-start;
@@ -32,6 +33,7 @@ p {
     background-color: #383838;
 
     min-width: 200px;
+    max-width: 250px;
     min-height: 100px;
     line-height: 1; /* Tighten line spacing */
 }
@@ -43,10 +45,112 @@ p {
 
 .box-title {
     font-size: 24px;
+    padding-bottom: 4px;
+}
+
+.box-num {
+    font-size: 48px;
+    padding-bottom: 4px;
 }
 
 
 
 body {
     background-color: #232323;
+    padding: 5px;
 }
+
+
+.banner-container {
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    align-items: center; 
+    align-content: flex-start;
+    padding: 5px;
+    border: 0px dotted white;
+}
+
+.banner-items {
+    border: 0px dotted white;
+}
+
+.banner-title {
+    font-size: 35px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+
+.social-container {
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    align-items: center; 
+    align-content: flex-start;
+    border: 0px dotted white;
+    gap: 10px;
+}
+
+.social-items {
+    border: 0px dotted white;
+}
+
+.social-items > img {
+    width: 40px;
+}
+
+
+
+@keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-250px * 7));
+    }
+  }
+
+  .slide > img {
+    width: 250px;
+    height: 50px;
+  }
+  
+  .slider {
+    background: #232323;
+    height: 50px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 1fr;
+  }
+  
+  .slider::before,
+  .slider::after {
+    background: linear-gradient(to right, #232323 0%, rgba(255, 255, 255, 0) 100%);;
+    content: "";
+    height: 100px;
+    position: absolute;
+    width: 50px;
+    z-index: 2;
+  }
+  
+  .slider::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+  }
+  
+  .slider::before {
+    left: 0;
+    top: 0;
+  }
+  
+  .slider .slide-track {
+    animation: scroll 100s linear infinite;
+    display: flex;
+    width: calc(250px * 15);
+  }
