@@ -145,6 +145,7 @@ body {
 }
 .res-items:hover .res-overlay {
   visibility: visible; opacity: 1;
+  cursor: pointer;
 }
 
 
