@@ -88,7 +88,7 @@ body {
     align-items: center; 
     align-content: flex-start;
     border: 0px dotted white;
-    gap: 10px;
+    gap: 20px;
 }
 
 .social-items {
@@ -96,7 +96,7 @@ body {
 }
 
 .social-items > img {
-    width: 40px;
+    height: 30px;
 }
 
 
@@ -114,10 +114,10 @@ body {
     width: 200px;
     height: 50px;
   }
-  
+
   .slider {
     background: #232323;
-    height: 50px;
+    height: 70px;
     margin: auto;
     overflow: hidden;
     position: relative;
