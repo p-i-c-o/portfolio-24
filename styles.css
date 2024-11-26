@@ -135,8 +135,20 @@ body {
   background: rgba(0, 0, 0, 0.7);
  
   /* (B2) CENTER CONTENT */
-  display: flex; justify-content: center; align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
+
+.res-overlay p {
+  margin: 5px;
+}
+
+.res-overlay p:nth-child(1) {
+  font-size: 18px;
+}
+
  
 /* (C) ONLY SHOW CAPTION ON HOVER */
 .res-overlay {
