@@ -70,6 +70,7 @@ body {
 
 .banner-items {
     border: 0px dotted white;
+    padding-bottom: 10px;
 }
 
 .banner-title {
