@@ -79,6 +79,20 @@ body {
     line-height: 1;
 }
 
+.banner-title a {
+  font-size: 35px;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  border: 0px;
+  background-color: #232323;
+  color: white;
+  text-decoration: none;
+}
+
+.banner-title a:hover {
+  text-decoration: underline;
+}
 
 .social-container {
     display: flex;
@@ -172,45 +186,69 @@ body {
     }
   }
 
-  .slide > img {
-    width: 200px;
-    height: 50px;
-  }
+.slide > img {
+  width: 200px;
+  height: 50px;
+}
 
-  .slider {
-    background: #232323;
-    height: 70px;
-    margin: auto;
-    overflow: hidden;
-    position: relative;
-    width: 1fr;
-  }
-  
-  .slider::before,
-  .slider::after {
-    background: linear-gradient(to right, #232323 0%, rgba(255, 255, 255, 0) 100%);;
-    content: "";
-    height: 100px;
-    position: absolute;
-    width: 50px;
-    z-index: 2;
-  }
-  
-  .slider::after {
-    right: 0;
-    top: 0;
-    transform: rotateZ(180deg);
-  }
-  
-  .slider::before {
-    left: 0;
-    top: 0;
-  }
-  
-  .slider .slide-track {
-    animation: scroll 60s linear infinite;
-    display: flex;
-    width: calc(200px * 15);
-  }
+.slider {
+  background: #232323;
+  height: 70px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 1fr;
+}
+
+.slider::before,
+.slider::after {
+  background: linear-gradient(to right, #232323 0%, rgba(255, 255, 255, 0) 100%);;
+  content: "";
+  height: 100px;
+  position: absolute;
+  width: 50px;
+  z-index: 2;
+}
+
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+
+.slider::before {
+  left: 0;
+  top: 0;
+}
+
+.slider .slide-track {
+  animation: scroll 60s linear infinite;
+  display: flex;
+  width: calc(200px * 15);
+}
 
 
+.book-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: stretch;
+  gap: 15px;
+}
+
+.book-items {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+  border: 2px solid black;
+  background-color: #383838;
+  align-items: center;
+  padding: 0px;
+  margin: 0px;
+  line-height: 1;
+}
