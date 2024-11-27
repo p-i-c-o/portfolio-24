@@ -252,4 +252,5 @@ body {
   padding: 0px;
   margin: 0px;
   line-height: 1;
+  text-wrap: wrap;
 }
