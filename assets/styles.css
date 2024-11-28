@@ -73,6 +73,23 @@ body {
     padding-bottom: 10px;
 }
 
+.low-banner-container {
+  display: flex;
+  flex-direction: row; 
+  flex-wrap: wrap; 
+  justify-content: space-around; 
+  align-items: center; 
+  align-content: flex-start;
+  padding: 5px;
+  border: 0px dotted white;
+  border-top: 1px solid white;
+  margin-top: 30px;
+}
+
+.low-banner-items {
+  border: 0px dotted white;
+}
+
 .banner-title {
     font-size: 35px;
     margin: 0;
