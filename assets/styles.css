@@ -192,6 +192,14 @@ body {
   cursor: pointer;
 }
 
+@media (hover: none) {
+  .res-overlay {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+
 
 
 
